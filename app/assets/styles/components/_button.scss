@@ -1,0 +1,53 @@
+//----------------------------------------------------------------------------------------------
+//************************************* Begin::Button ****************************************//
+//----------------------------------------------------------------------------------------------
+
+.btn-style{
+    width: 100%;
+    display: block;
+    font-weight: $w-regular;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: $font-small;
+    font-weight:$w-medium; 
+    line-height: $small;
+    border-radius: 4px;
+    outline: 0 !important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &.green{
+        background-color: color(green,primary);
+        color: color(base,white);
+        padding: 16px 30px;
+        &:hover{
+            background-color: #399C46;
+        }
+    }
+
+    &.orange{
+        background-color: color(orange,primary);
+        color: color(base,white);
+        padding: 16px 30px;
+        &:hover{
+            background-color: #DB6A24;
+        }
+    }
+    &.large{
+     padding: 22px 30px;
+     border-radius: 8px;
+    }
+    &.fluid{
+        width: 100%;
+        display: block;
+    }
+}
+
+//----------------------------------------------------------------------------------------------
+//************************************* End::Button ******************************************//
+//----------------------------------------------------------------------------------------------

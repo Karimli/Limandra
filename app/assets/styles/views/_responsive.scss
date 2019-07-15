@@ -1,0 +1,220 @@
+@media screen and (min-width:992px){
+//************************************* Begin::Header ****************************************//
+.header{
+    .header-holder{
+    height: 100px;
+    &--logo{
+        width: auto;
+    }
+    &-navigation{
+        display: block !important;
+        position: inherit;
+        padding: 0;
+        &-item{
+            display: inline-block;
+            margin: 0 0 0 40px;
+            &--link{
+                font-size: $font-small;
+                line-height: $small;
+                font-weight: $w-medium;
+                color: color(grey,dark);
+                border-radius: 0;
+                padding: 0;
+                background-color: color(base,transparent);
+            }
+        }
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+    }
+
+}
+
+//************************************* End::Header ******************************************//
+
+
+//************************************* Begin::Home ******************************************//
+.home{
+    height: calc(100vh - 30px);
+    background-image: url(../images/wallpaper/main-background.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: color(base,transparent);
+    padding: 100px 0 0 0;
+
+
+    .section-holder{
+        height: calc(100vh - 200px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn-style{
+            margin-top: 40px;
+        }
+
+        .section-illustration{
+            display: block;
+        }
+    }
+}
+//************************************* End::Home ******************************************//
+
+//************************************* Begin:: Idea ******************************************//
+.idea{
+    padding:100px 0 0 0; 
+    .idea-direction{
+        padding: 70px 0 40px 0;
+        &-item{
+            text-align: left;
+            &--icon{
+                margin: inherit;
+                width: 50px;
+                height: 50px;
+                font-size: 50px;
+                color: color(orange,primary);
+                margin-bottom: 30px;
+            }
+            &--title{
+                font-size: $font-base;
+                line-height: $middle;
+                font-weight: $w-medium;
+                color:color(base,black);
+                margin-bottom: 8px;
+            }
+            &--description{
+                font-size: $font-small;
+                line-height: $base;
+                color:color(grey,primary);
+            }
+        }
+    }
+}
+//************************************* End:: Idea ******************************************//
+
+//************************************* Begin:: Project ******************************************//
+.project{
+    padding: 100px 0;
+
+    .section-holder{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .section-illustration{
+            width: 60%;
+            display: block;
+        }
+        .section-content{
+            width: 40%;
+        }
+        .btn-style{
+            margin-top: 24px;
+        }
+    }
+
+}
+//************************************* End:: Project ******************************************//
+
+.contact {
+    padding: 70px 0;
+  
+    &-form {
+      padding-top: 70px;
+    }
+  
+  }
+
+//************************************* Begin:: Footer ******************************************//
+.footer{
+    &-top{
+        &--logo{
+            width: auto;
+        }
+    }
+    &-menu{
+        padding: 30px 0;
+        flex-direction: row;
+        &-list{
+            margin: 0;
+            &--title{
+                font-size: $font-medium;
+                line-height: $x-medium;
+
+            }
+            &-item{
+                font-size: $font-small;
+                line-height: $x-medium;
+            }
+        }
+    }
+
+    &-bottom{
+        padding: 30px 0;
+        font-size: $font-small;
+        line-height: $medium;
+        text-align: left;
+    }
+}
+//************************************* End:: Footer ******************************************//
+
+
+//************************************* Begin::Buttons ******************************************//
+.btn-style{
+    display: inline-block;
+    width: auto;
+    &.green{
+        padding: 12px 30px;
+    }
+    &.orange{
+        padding: 12px 30px;
+    }
+}
+//************************************* End::Buttons ******************************************//
+
+br{
+    display: block;
+}
+//************************************* Begin::Titles ******************************************//
+.main-content{
+    text-align: left;
+    &--title{
+      font-size: $font-x-large;
+      line-height: $x-large;
+    }
+    &--description{
+      font-size: $font-base;
+      line-height: $medium;
+    }
+  }
+
+  .section-content{
+      text-align: left;
+    &--title{
+      font-size: $font-large;
+      line-height: $large;
+    }
+    &--description{
+      font-size: $font-base;
+      line-height: $medium;
+  
+      &.small{
+        font-size: $font-small;
+      }
+    }
+  }
+//************************************* End::Titles ******************************************//
+
+}
+
+@media screen and (min-width:1170px){
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+}
+

@@ -1,0 +1,104 @@
+//----------------------------------------------------------------------------------------------
+//************************************* Begin::Header ****************************************//
+//----------------------------------------------------------------------------------------------
+
+.header{
+    background-color: color(base,white);
+    box-shadow: 0 0 20px -6px rgba(0,0,0,0.08);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    .header-holder{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--logo{
+        width: 100px;
+    }
+    &-navigation{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 70px;
+        background-color: color(base,white);
+        padding: 20px;
+        display: none;
+        &-item{
+            display: block;
+            margin: 0 0 16px 0;
+            &--link{
+                font-size: $font-small;
+                line-height: $small;
+                font-weight: $w-medium;
+                color: color(orange,primary);
+                display: block;
+                padding: 16px;
+                background-color: rgba(244, 119, 41, 0.10);
+                border-radius: 2px;
+                text-align: center;
+            }
+        }
+    }
+    .menu-toggle{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        .trigger{
+            position: relative;
+            line-height: 30px;
+            height: 2px;
+            width: 100%;
+            display: inline-block;
+            background-color: color(base,black);
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                background-color: color(base,black);
+                height: 2px;
+                width: 100%;
+                bottom: -7px;
+                -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                background-color: color(base,black);
+                height: 2px;
+                width: 100%;
+                top: -7px;
+                -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+            }
+        }
+        &.is-active{
+            .trigger{
+                background-color: color(base,transparent);
+                &::before{
+                    bottom: 0;
+                    -webkit-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                }
+                &::after{
+                    top: 0;
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
+    }
+}
+
+//----------------------------------------------------------------------------------------------
+//************************************* End::Header ******************************************//
+//----------------------------------------------------------------------------------------------
+
+
+

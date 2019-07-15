@@ -1,0 +1,70 @@
+.footer{
+    background-color: #F8FAFB;
+    &-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+        border-bottom: 1px solid #E6EBED;
+        &--logo{
+            width: 100px;
+        }
+        &-social-link{
+            &-item{
+                display: inline-block;
+                margin-left: 10px;
+                &--link{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background-color: #F8FAFB;
+                    border: 1px solid #E6EBED;
+                    font-size: $font-base;
+                    color: color(base,black);
+                    transition: all 200ms ease-in-out;
+                    &:hover{
+                        background-color: color(orange,primary);
+                        border-color: color(orange,primary);
+                        color:color(base,white);
+                    }
+                }
+            }
+        }
+    }
+    &-menu{
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        &-list{
+            margin: 20px 0;
+            &--title{
+                font-size: $font-base;
+                line-height: $base;
+                font-weight: $w-medium;
+                color: color(base,black);
+                margin-bottom: 8px;
+            }
+            &-item{
+                font-size: $font-x-small;
+                line-height: $medium;
+                color: #979CA8;
+                &--link{
+                    color: #979CA8;
+                    transition: all 200ms ease-in-out;
+                    &:hover{
+                        color: color(orange,primary);
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        padding: 20px 0;
+        font-size: $font-xx-small;
+        line-height: $base;
+        text-align: center;
+        color: #979CA8;
+    }
+}
