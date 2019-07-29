@@ -46,6 +46,28 @@
         width: 100%;
         display: block;
     }
+
+    i{
+        font-size: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+}
+
+.breadcumb{
+    color: color(orange,primary);
+    font-weight: $w-medium;
+    i{
+        margin-right: 5px;
+        font-size: 20px;
+        transition: all 200ms ease-in-out;
+    }
+    &:hover{
+        color: color(orange,primary);
+        i{
+            margin-right: 10px;
+        }
+    }
 }
 
 //----------------------------------------------------------------------------------------------

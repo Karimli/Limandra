@@ -1,3 +1,8 @@
+.main-root{
+  &.space{
+    padding: 80px 0;
+  }
+}
 .home {
   height: auto;
   background-image: inherit;
@@ -143,6 +148,49 @@
   }
 }
 
+.awards-list{
+  padding: 50px 0;
+  .awards{
+    margin-top: 50px;
+    text-align: center;
+    &--image{
+      margin-bottom: 24px;
+    }
+    &--title{
+      @include font($font-x-medium,$base,$w-medium,color(base,black));
+      margin-bottom: 8px;
+    }
+    &--description{
+      font-size: $font-small;
+      line-height: $base;
+      color: color(grey, primary);
+    }
+  }
+}
+.modal-content{
+  border: 0;
+  .close{
+      position: absolute;
+      top: -40px;
+      right: 0;
+      font-size: 35px;
+      opacity: 1;
+      text-shadow: none;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 300ms ease-in-out;
+      transform: rotate(0deg);
+
+      &:hover{
+          transform: rotate(180deg);
+          opacity: 1;
+      }
+  }
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+  opacity: 1;
+}
 br {
   display: none;
 }

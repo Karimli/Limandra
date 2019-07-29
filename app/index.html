@@ -30,20 +30,20 @@
           <img src="assets/images/logo/logo.svg" class="img-fluid" alt="logo">
         </a>
         <ul class="header-holder-navigation">
+            <li class="header-holder-navigation-item">
+                <a href="#" class="header-holder-navigation-item--link">Biz kimik</a>
+              </li>
+              <li class="header-holder-navigation-item">
+                  <a href="#" data-scroll="idea" class="header-holder-navigation-item--link">İdeya istiqamətləri</a>
+                </li>
+              <li class="header-holder-navigation-item">
+                  <a href="#" class="header-holder-navigation-item--link">Mükafatlar</a>
+                </li>
           <li class="header-holder-navigation-item">
-            <a href="#" class="header-holder-navigation-item--link">Əsas Səhifə</a>
+            <a href="#" data-scroll="contact" class="header-holder-navigation-item--link">Əlaqə</a>
           </li>
           <li class="header-holder-navigation-item">
-            <a href="#" class="header-holder-navigation-item--link">İdeya istiqamətləri</a>
-          </li>
-          <li class="header-holder-navigation-item">
-            <a href="#" class="header-holder-navigation-item--link">Layihə haqqında</a>
-          </li>
-          <li class="header-holder-navigation-item">
-            <a href="#" class="header-holder-navigation-item--link">Əlaqə</a>
-          </li>
-          <li class="header-holder-navigation-item">
-            <a href="#" class="btn-style orange">Müsabiqəyə qatıl</a>
+            <a href="#" data-scroll="competition" class="btn-style orange">Müsabiqəyə qatıl</a>
           </li>
         </ul>
         <div class="menu-toggle">
@@ -52,15 +52,15 @@
       </div>
     </div>
   </header>
-<main class="main-root">
-    <section class="home">
+  <main class="main-root">
+    <section class="home" data-scroll="home">
       <div class="wrapper">
         <div class="section-holder">
           <div class="main-content">
             <h1 class="main-content--title">Beyninizdə yeni <br> bir fikir qaynayır?</h1>
             <p class="main-content--description">Limandraları beyninizdə öldürməyin! Müsabiqədə <br> iştirak edərək
               ideyalarınıza şans verin!</p>
-            <button class="btn-style green">Müsabiqəyə qoşul</button>
+            <button class="btn-style green" data-scroll="competition">Müsabiqəyə qoşul</button>
           </div>
           <div class="section-illustration">
             <img src="assets/images/illustration/main-illustration.svg" alt="section-illustration">
@@ -68,7 +68,7 @@
         </div>
       </div>
     </section>
-    <section class="idea">
+    <section class="idea" data-scroll="idea">
       <div class="wrapper">
         <div class="section-content text-center">
           <h2 class="section-content--title">İdeya istiqamətləri</h2>
@@ -201,7 +201,7 @@
         </div>
       </div>
     </section>
-  <section class="project">
+    <section class="project" data-scroll="project">
       <div class="wrapper">
         <div class="section-holder">
           <div class="section-illustration">
@@ -213,12 +213,12 @@
               israfı səbəb göstərilərək sıxışdırılan yaradıcılığın bir simvolu olan və heç vaxt yaradıla bilməyən
               "Limandra" meyvəsinin adını daşıyan müsabiqə kənd təsərrüfatı sahəsində innovasiyaların tətbiqinin və
               yaradıcı düşüncənin təşviq olunması məqsədini daşıyır.</p>
-            <button class="btn-style green">Video təqdimat</button>
+            <button class="btn-style green videoModalTriger" data-toggle="modal" data-target="#videoModal" data-videoModal="https://www.youtube.com/embed/WWmJ38aEtDc"><i class="mdi mdi-play"></i> Video təqdimat</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" data-scroll="competition">
       <div class="wrapper">
         <div class="section-content text-center">
           <h2 class="section-content--title">Müsabiqəyə qoşulun</h2>
@@ -226,40 +226,40 @@
             ideyalarınıza şans verin!</p>
         </div>
         <div class="contact-form">
-            <form action="">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="input-wrapper">
-                    <label for="">Ad Soyad</label>
-                    <input class="form-input" type="text" required>
-                  </div>
+          <form action="">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="input-wrapper">
+                  <label for="">Ad Soyad</label>
+                  <input class="form-input" type="text" required>
                 </div>
-                <div class="col-lg-4">
-                    <div class="input-wrapper">
-                      <label for="">Email</label>
-                      <input class="form-input" type="email" required>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="input-wrapper">
-                        <label for="">Mövzu</label>
-                        <input class="form-input" type="text" required>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <div class="input-wrapper">
-                          <textarea class="form-input" name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                      </div>
               </div>
-              <button type="submit" class="btn-style orange large fluid">Müraciəti göndər</button>
-            </form>
-          </div>
+              <div class="col-lg-4">
+                <div class="input-wrapper">
+                  <label for="">Email</label>
+                  <input class="form-input" type="email" required>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="input-wrapper">
+                  <label for="">Mövzu</label>
+                  <input class="form-input" type="text" required>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="input-wrapper">
+                  <textarea class="form-input" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn-style orange large fluid">Müraciəti göndər</button>
+          </form>
+        </div>
       </div>
-    </section> 
+    </section>
   </main>
-   <footer class="footer">
+  <footer class="footer" data-scroll="contact">
     <div class="wrapper">
       <div class="footer-top">
         <a href="/" class="footer-top--logo">
@@ -287,17 +287,11 @@
         <ul class="footer-menu-list">
           <li class="footer-menu-list--title">Haqqımızda</li>
           <li class="footer-menu-list-item">
-            <a href="#" class="footer-menu-list-item--link">Layihə haqqında</a>
-          </li>
-          <li class="footer-menu-list-item">
-            <a href="#" class="footer-menu-list-item--link">İstiqamətlər</a>
-          </li>
-          <li class="footer-menu-list-item">
-            <a href="#" class="footer-menu-list-item--link">Müraciət</a>
-          </li>
-          <li class="footer-menu-list-item">
-            <a href="#" class="footer-menu-list-item--link">Əlaqə</a>
-          </li>
+              <a href="#" class="footer-menu-list-item--link">Biz kimik?</a>
+            </li>
+            <li class="footer-menu-list-item">
+              <a href="#" class="footer-menu-list-item--link">Mükafatlar</a>
+            </li>
         </ul>
         <ul class="footer-menu-list">
           <li class="footer-menu-list--title">Əlaqə</li>
@@ -322,8 +316,19 @@
         &copy; Bütün huquqlar qorunur. Limandra Aqrar İdeya Müsabiqəsi 2019
       </div>
     </div>
-  </footer> 
-
+  </footer>
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+        <div class="modal-content">
+          <div class="close" data-dismiss="modal" aria-label="Close">
+            <i class="mdi mdi-close"></i>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- build:js assets/scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

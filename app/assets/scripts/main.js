@@ -1,16 +1,34 @@
 $(document).ready(function(){
-    // Email.send({
-    //     SecureToken : "acc02480-2c43-45f7-8ac0-31aa3368a9d3",
-    //     To : 'talehkarim@gmail.com',
-    //     From : "limandrasmtp@gmail.com",
-    //     Subject : "This is the subject",
-    //     Body : "Salam qaqa necesen?"
-    // }).then(
-    //   message => alert(message)
-    // );
-        //toggle menu responsive mode
-        $('.menu-toggle').click(function () {
-            $(this).toggleClass('is-active');
-            $('.header-holder-navigation').slideToggle(300);
+
+    //toggle menu responsive mode
+    $('.menu-toggle').click(function () {
+        $(this).toggleClass('is-active');
+        $('.header-holder-navigation').slideToggle(300);
+    });
+        //animating scroll
+        $('.header [data-scroll], .main-content [data-scroll], .footer [data-scroll]').click(function (e) {
+            e.preventDefault();
+            var scrollSection = $(this).data('scroll');
+            var scrollTop = $('section[data-scroll="' + scrollSection + '"] , footer[data-scroll="' + scrollSection + '"] ').offset().top - 0;
+            $('html, body').animate({
+              scrollTop: scrollTop - 50
+            }, 1000);
+        
           });
+          
+        
+
+          // Vimeo Videoplayer script //
+  // Videoplayer //
+  var trigger = $('.videoModalTriger');
+  trigger.click(function() {
+    var theModal = $(this).data('target');
+    var videoSRC = $(this).attr('data-videoModal');
+    var videoSRCauto = videoSRC + '';
+    $(theModal + ' iframe').attr('src', videoSRCauto);
+    $(theModal).on('hidden.bs.modal', function(e) {
+      $(theModal + ' iframe').attr('src', '');
+    });
+  });
 })
+
