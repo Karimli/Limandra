@@ -36,14 +36,11 @@
               <li class="header-holder-navigation-item">
                   <a href="#" data-scroll="idea" class="header-holder-navigation-item--link">İdeya istiqamətləri</a>
                 </li>
-              <li class="header-holder-navigation-item">
-                  <a href="#" class="header-holder-navigation-item--link">Mükafatlar</a>
-                </li>
           <li class="header-holder-navigation-item">
             <a href="#" data-scroll="contact" class="header-holder-navigation-item--link">Əlaqə</a>
           </li>
           <li class="header-holder-navigation-item">
-            <a href="#" data-scroll="competition" class="btn-style orange">Müsabiqəyə qatıl</a>
+            <a href="#" class="btn-style orange">Müsabiqəyə qatıl</a>
           </li>
         </ul>
         <div class="menu-toggle">
@@ -60,7 +57,7 @@
             <h1 class="main-content--title">Beyninizdə yeni <br> bir fikir qaynayır?</h1>
             <p class="main-content--description">Limandraları beyninizdə öldürməyin! Müsabiqədə <br> iştirak edərək
               ideyalarınıza şans verin!</p>
-            <button class="btn-style green" data-scroll="competition">Müsabiqəyə qoşul</button>
+            <a href="#" class="btn-style green">Müsabiqəyə qoşul</a>
           </div>
           <div class="section-illustration">
             <img src="assets/images/illustration/main-illustration.svg" alt="section-illustration">
@@ -218,45 +215,49 @@
         </div>
       </div>
     </section>
-    <section class="contact" data-scroll="competition">
+    <section class="contact">
       <div class="wrapper">
-        <div class="section-content text-center">
-          <h2 class="section-content--title">Müsabiqəyə qoşulun</h2>
-          <p class="section-content--description">Limandraları beyninizdə öldürməyin! Müsabiqədə <br> iştirak edərək
-            ideyalarınıza şans verin!</p>
+        <div class="awards-list">
+              <div class="section-content text-center">
+                      <h2 class="section-content--title">Mükafatlar</h2>
+                    </div>
+              <div class="row flex-center">
+                      <div class="col-lg-4">
+                          <div class="awards">
+                              <div class="awards--image">
+                                  <img src="assets/images/illustration/first.svg" class="img-fluid" alt="first">
+                              </div>
+                              <h4 class="awards--title">1-ci yer</h4>
+                               <p class="awards--description">1000 AZN dəyərində pul mükafatı 500 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata keçirilməsində dəstək</p>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                              <div class="awards">
+                                  <div class="awards--image">
+                                      <img src="assets/images/illustration/second.svg" class="img-fluid" alt="second">
+                                  </div>
+                                  <h4 class="awards--title">2-ci yer</h4>
+                                   <p class="awards--description">700 AZN dəyərində pul mükafatı 300 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata  keçirilməsində dəstək </p>
+                              </div>
+                          </div>
+                          <div class="col-lg-4">
+                                  <div class="awards">
+                                      <div class="awards--image">
+                                          <img src="assets/images/illustration/third.svg" class="img-fluid" alt="third">
+                                      </div>
+                                      <h4 class="awards--title">3-cü yer</h4>
+                                       <p class="awards--description">300 AZN dəyərində pul mükafatı 200 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata keçirilməsində dəstək</p>
+                                  </div>
+                              </div>
+                              <div class="col-lg-4">
+                                      <div class="awards">
+                                          <h4 class="awards--title">4-10-cu yerlər</h4>
+                                           <p class="awards--description">300 AZN dəyərində pul mükafatı 200 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata keçirilməsində dəstək</p>
+                                      </div>
+                                  </div>
+                  </div>
         </div>
-        <div class="contact-form">
-          <form action="">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="input-wrapper">
-                  <label for="">Ad Soyad</label>
-                  <input class="form-input" type="text" required>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="input-wrapper">
-                  <label for="">Email</label>
-                  <input class="form-input" type="email" required>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="input-wrapper">
-                  <label for="">Mövzu</label>
-                  <input class="form-input" type="text" required>
-                </div>
-              </div>
-
-              <div class="col-lg-12">
-                <div class="input-wrapper">
-                  <textarea class="form-input" name="" id="" cols="30" rows="10"></textarea>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="btn-style orange large fluid">Müraciəti göndər</button>
-          </form>
-        </div>
-      </div>
+    </div>
     </section>
   </main>
   <footer class="footer" data-scroll="contact">
@@ -332,6 +333,7 @@
   <!-- build:js assets/scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!-- endbuild -->
   <!-- build:js assets/scripts/main.js -->

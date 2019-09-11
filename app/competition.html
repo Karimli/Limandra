@@ -34,47 +34,74 @@
     </div>
   </header>
   <main class="main-root space">
-      <div class="wrapper">
-          <div class="awards-list">
-                <div class="section-content text-center">
-                        <h2 class="section-content--title">Mükafatlar</h2>
-                      </div>
-                <div class="row flex-center">
-                        <div class="col-lg-4">
-                            <div class="awards">
-                                <div class="awards--image">
-                                    <img src="assets/images/illustration/first.svg" class="img-fluid" alt="first">
-                                </div>
-                                <h4 class="awards--title">1-ci yer</h4>
-                                 <p class="awards--description">1000 AZN dəyərində pul mükafatı 500 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata keçirilməsində dəstək</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                                <div class="awards">
-                                    <div class="awards--image">
-                                        <img src="assets/images/illustration/second.svg" class="img-fluid" alt="second">
-                                    </div>
-                                    <h4 class="awards--title">2-ci yer</h4>
-                                     <p class="awards--description">700 AZN dəyərində pul mükafatı 300 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata  keçirilməsində dəstək </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                    <div class="awards">
-                                        <div class="awards--image">
-                                            <img src="assets/images/illustration/third.svg" class="img-fluid" alt="third">
-                                        </div>
-                                        <h4 class="awards--title">3-cü yer</h4>
-                                         <p class="awards--description">300 AZN dəyərində pul mükafatı 200 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata keçirilməsində dəstək</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                        <div class="awards">
-                                            <h4 class="awards--title">4-10-cu yerlər</h4>
-                                             <p class="awards--description">300 AZN dəyərində pul mükafatı 200 AZN dəyərində "Kənddən Şəhərə" hədiyyə kartı Uğurlu iştirak sertifikatı İdeyanın həyata keçirilməsində dəstək</p>
-                                        </div>
-                                    </div>
-                    </div>
-          </div>
+     <div class="wrapper">
+        <div class="section-content text-center">
+          <h2 class="section-content--title">Müsabiqəyə qoşulun</h2>
+          <p class="section-content--description">Limandraları beyninizdə öldürməyin! Müsabiqədə <br> iştirak edərək
+            ideyalarınıza şans verin!</p>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="input-wrapper">
+                  <label for="">Ad Soyad</label>
+                  <input class="form-input" type="text" required>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="input-wrapper">
+                  <label for="">Doğum tarixiniz</label>
+                  <input class="form-input date-mask" type="text" required>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="input-wrapper">
+                  <label for="">Email</label>
+                  <input class="form-input" type="email" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-wrapper">
+                  <label for="">Əlaqə nömrənizi daxil edin</label>
+                  <input class="form-input phone-mask" type="text" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-wrapper">
+                  <label for="">Təhsiliniz</label>
+                  <input class="form-input" type="text" required>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-wrapper">
+                  <textarea class="form-input" name="" id="" cols="30" rows="5" placeholder="İdeyanızın ətraflı təsvirini verin"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-wrapper">
+                  <textarea class="form-input" name="" id="" cols="30" rows="5" placeholder="İdeyanızı 3 cümlədə qısa təsvir edin"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-wrapper">
+                  <textarea class="form-input" name="" id="" cols="30" rows="5" placeholder="İdeyanız reallaşarsa kimlər hansı faydanı əldə edəcəkdir?"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-wrapper">
+                  <textarea class="form-input" name="" id="" cols="30" rows="5" placeholder="İdeyanı həyata keçirmək üçün hansı resurslara ehtiyacınız var?"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="input-wrapper">
+                  <textarea class="form-input" name="" id="" cols="30" rows="5" placeholder="Təklif etdiyiniz həllin hansı birbaşa və dolayı alternativləri var?"></textarea>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn-style orange large fluid">Müraciəti göndər</button>
+          </form>
+        </div>
       </div>
   </main>
   <footer class="footer">
@@ -139,6 +166,7 @@
   <!-- build:js assets/scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!-- endbuild -->
   <!-- build:js assets/scripts/main.js -->
